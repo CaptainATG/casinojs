@@ -1,0 +1,201 @@
+﻿.message_center {
+  padding: 0;
+  float: left;
+  display: block;
+  position: relative;
+  width: 900px;
+}
+.mail_top {
+  clear: both;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  background: #fff;
+}
+.mail_detail {
+  clear: both;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  background: #fff;
+}
+.mail_detail p {
+  padding: 20px 10px;
+}
+.mail_bottom {
+  float: left;
+  display: block;
+  width: 100%;
+  height: 40px;
+  /*background:url(../img/gradient.png) repeat-x top;*/
+  background: #333;
+}
+.table_message {
+  margin: 0;
+  background: #fff;
+  font-size: 12px;
+  border-collapse: collapse;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+.table_message a {
+  color: #333;
+}
+.table_message a:hover {
+  text-decoration: none;
+}
+.table_message td {
+  margin: 0;
+  padding: 5px 10px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
+  color: #333;
+  text-transform: capitalize;
+}
+.table_message tr:hover {
+  background: #eee;
+}
+.table_message thead tr {
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 0 1px 0 #def0fa;
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(100%, rgba(0, 0, 0, 0.1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1a000000', GradientType=0 );
+}
+.table_message thead th {
+  text-align: center;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 10px 10px;
+  color: #fff;
+  text-transform: capitalize;
+  vertical-align: middle;
+  font-size: 12px;
+  background: url(../images/header_message.png) top;
+  text-shadow: none;
+}
+.with_message {
+  width: 100%;
+}
+.bggray {
+  background: #ddd;
+}
+.bgunread {
+  font-weight: 600;
+}
+.mail_bottom a {
+  color: #fed70e !important;
+}
+.mail_bottom a:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.recycle i {
+  float: left;
+  font-size: 20px;
+  margin: 10px 20px 0 20px;
+}
+.ref_btn i {
+  float: left;
+  font-size: 20px;
+  margin: 10px 0 0 15px;
+}
+.close_btn i {
+  float: left;
+  font-size: 20px;
+  margin: 10px 5px 0 0;
+}
+a.close_btn {
+  float: right;
+  line-height: 42px;
+  padding-right: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.textyellow {
+  color: #59c0f8 !important;
+}
+
+@media screen and (max-width: 680px) {
+  table.table_message,
+  .table_message thead,
+  .table_message tbody,
+  .table_message th,
+  .table_message td,
+  .table_message tr {
+    display: block;
+  }
+  .table_message thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table_message tr {
+    border-bottom: 1px solid #ddd;
+  }
+  .table_message td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 35%;
+    text-align: right !important;
+  }
+  .table_message td:before {
+    position: absolute;
+    left: 6px;
+    width: 30%;
+    padding-right: 5px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .table_message td:nth-of-type(1):before {
+    content: "No";
+  }
+  .table_message td:nth-of-type(2):before {
+    content: "Sender";
+  }
+  .table_message td:nth-of-type(3):before {
+    content: "";
+  }
+  .table_message td:nth-of-type(4):before {
+    content: "Subject";
+  }
+  .table_message td:nth-of-type(5):before {
+    content: "Date";
+  }
+}
